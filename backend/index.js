@@ -14,7 +14,7 @@ const studyRoutes = require('./routes/studyRoutes');
 const dashboardRoutes = require('./routes/dashboardRoutes');
 
 const app = express();
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: `${process.env.FRONTEND_URL}`, credentials: true }));
 app.use(bodyParser.json());
 
 app.use("/api/auth",(req,res,next)=>{ console.log("Auth Route Hit"); next(); });
