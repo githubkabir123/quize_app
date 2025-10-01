@@ -18,8 +18,8 @@ backend/node_modules/
 .env.production.local
 
 # Build outputs
-client/build/
-client/dist/
+app/build/
+app/dist/
 backend/dist/
 backend/build/
 
